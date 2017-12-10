@@ -1,8 +1,6 @@
 package io.github.davidwadden.websample;
 
-import lombok.AccessLevel;
-import lombok.Builder;
-import lombok.Data;
+import lombok.*;
 import lombok.experimental.FieldDefaults;
 
 import javax.persistence.Entity;
@@ -11,6 +9,9 @@ import javax.persistence.GenerationType;
 import javax.persistence.Id;
 
 @FieldDefaults(level = AccessLevel.PRIVATE)
+@NoArgsConstructor(force = true, access = AccessLevel.PRIVATE)
+@AllArgsConstructor(access = AccessLevel.PRIVATE)
+@RequiredArgsConstructor
 @Builder
 @Data
 @Entity
