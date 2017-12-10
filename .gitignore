@@ -11,7 +11,9 @@
 .springBeans
 
 ### IntelliJ IDEA ###
-.idea
+.idea/*
+!.idea/codeStyleSettings.xml
+!.idea/codeStyles
 *.iws
 *.iml
 *.ipr
@@ -23,3 +25,6 @@ nbbuild/
 dist/
 nbdist/
 .nb-gradle/
+
+### Other ###
+**/out
